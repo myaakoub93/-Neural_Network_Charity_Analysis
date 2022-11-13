@@ -33,15 +33,15 @@ The EIN and NAME columns will not increase the accuracy of the model and can be 
 4. How many neurons, layers, and activation functions did you select for your neural network model, and why?    
 In the optimized model, layer 1 started with 120 neurons with a relu activation.  For layer 2, it dropped to 80 neurons and continued with the relu activation.  From there, the sigmoid activation seemed to be the better fit for layers 3 (40 neurons) and layer 4 (20 neurons).    
 
-![Pic 1](https://github.com/ayaakoub/Neural_Network_Charity_Analysis/blob/main/Image/Model%202.PNG)   
+![Pic 1](https://github.com/myaakoub93/Neural_Network_Charity_Analysis/blob/main/Image/Model%202.PNG)   
 
 5. Were you able to achieve the target model performance?   
 The target for the model was 75%, but the best the model could produce was 72.7%.
 
 6. What steps did you take to try and increase model performance?   
 Columns were reviewed and the STATUS and SPECIAL_CONSIDERATIONS columns were dropped as well as increasing the number of neurons and layers.  Other activations were tried such as tanh, but the range that model produced went from 40% to 68% accuracy.  The linear activation produced the worst accuracy, around 28%.  The relu activation at the early layers and sigmoid activation at the latter layers gave the best results.  
-![Pic 2](https://github.com/ayaakoub/Neural_Network_Charity_Analysis/blob/main/Image/Dev_1_and_2.PNG)   
-![Pic 3](https://github.com/ayaakoub/Neural_Network_Charity_Analysis/blob/main/Image/Dev3.PNG)    
+![Pic 2](https://github.com/myaakoub93/Neural_Network_Charity_Analysis/blob/main/Image/Dev_1_and_2.PNG)   
+![Pic 3](https://github.com/myaakoub93/Neural_Network_Charity_Analysis/blob/main/Image/Dev3.PNG)    
 
 ### Summary:   
 The relu and sigmoid activations yielded a 72.7% accuracy, which is the best the model could produce using various number of neurons and layers.  The next step should be to try the random forest classifier as it is less influenced by outliers.  
